@@ -8,14 +8,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" href="./img/logo.png">
 </head>
 <body>
-    <div class="contenedor">
+    <div class="contenedor" data-aos="fade-down">
         <header class="header">
             <img class="logo" src="./img/logo.png" alt="logo">
-            <h1>Impresiones 3D</h1>
+            <h1 class="animate__animated animate__fadeInRightBig">
+                Impresiones 3D
+            </h1>
 
             <nav>
                 <ul>
@@ -28,7 +31,7 @@
         </header>   
 
         <main class="main">
-            <h2>Diseños Personalizados</h2>
+            <h2 class="animate__animated animate__fadeInRightBig">Diseños Personalizados</h2>
             <img class="diseñoPersonalizado" src="./img/imagen1.jpg" alt="Foto de la impresionde una mano">
             <p class="maker">Lo que te imagines se hace posible con los mejores maker en diseño e impresion 3D</p>
         </main>
@@ -49,5 +52,11 @@
                 <a  href =" https://www.instagram.com/ " style ="color: transparent;"> <img src ="./img/instagram.png" alt ="iconoInstagram"></a>  
         </footer>
     </div>
+
+        <script src="js/wow.min.js"></script>
+
+        <script>
+            new WOW().init();
+        </script>
 </body>
 </html>
