@@ -24,7 +24,7 @@ header{
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 400px;
+    height: 700px;
     align-items: center;
     justify-content: center;
     color:beige;
@@ -33,10 +33,8 @@ header{
 }
 
 .logo{
-    width: 0px;
-    padding-left: 0px;
-    background: radial-gradient( yellow, grey, pink );
-    
+    width: 200px;
+    position: relative;
 }
 
 body {
@@ -160,6 +158,19 @@ footer img{
 }
 
 /*comenzando a aplicar combinar todo*/
+.contenedor .cambios{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+
 .contenedor{
     margin: auto;
     width: 90%;
@@ -172,6 +183,20 @@ footer img{
     "footer footer"
     ;
 }
+
+.main .categorias{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"
+    ;
+}
+
 .header{
     padding: 1.2rem;
     grid-area: header;
@@ -252,6 +277,14 @@ img:hover{
     transition: all 2s ease;
 } 
 
+h4{
+    color: bisque;
+}
+
+nav{
+    border-radius: 50px;
+}
+
 @media screen and (max-width:768px){
     .contenedor{
         grid-template-areas: 
@@ -262,4 +295,5 @@ img:hover{
         "formularioContacto formularioContacto"
         ;
     }
+
 }
