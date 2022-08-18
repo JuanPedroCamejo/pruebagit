@@ -1,0 +1,37 @@
+aside{
+    background-color: aqua;
+    color: blue;
+    padding: 1.2rem;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: radial-gradient(rgb(141, 141, 184), violet, pink);
+    img{
+        width: 350px;
+        }
+        .ortopedia{
+            width: 100%;
+            height: 100%;
+        }
+        .odontologia{
+            width: 100%;
+            height: 100%;
+        }
+        .formularioContacto{
+            background-color: gray;
+            text-align: center;
+        }
+        .section{
+            padding: 1.2rem;
+            grid-area: formularioContacto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+}
+
+
+

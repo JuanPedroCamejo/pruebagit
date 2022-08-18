@@ -1,0 +1,42 @@
+@import "body";
+@import "header";
+@import "main";
+@import "footer";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:768px){
+    .contenedor{
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer"
+        "formularioContacto formularioContacto"
+        ;
+    }
+}
+    .contenedor .cambios{
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 3fr auto;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+    @font-face{
+        font-family: 'Palette Mosaic', cursive;
+        src: url("../fonts/");
+    }
+
+
+
+

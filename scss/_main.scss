@@ -1,0 +1,24 @@
+main{
+    img{
+        width: 340px;
+        height: 200px;
+        margin-top: 20px;
+        padding-left: 30px;
+        position: relative;
+    }
+    .main .categorias{
+        margin: auto;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 3fr auto;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+    }
+    h2{
+        align-self: center
+    }
+} 
