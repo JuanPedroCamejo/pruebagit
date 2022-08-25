@@ -1,0 +1,42 @@
+/*Aplicandon MAP-GET*/
+$estilos: (  
+        color: #32549d,             
+        centro: center,
+        tfuente: 40px,
+        1rem: 1rem
+); 
+
+
+.footer{
+    background-color: map-get($estilos, color);
+    padding: map-get($estilos , 1rem);
+    font-size: map-get($estilos, tfuente);
+    text-align: map-get($estilos, centro);
+}
+
+/*Declarando  mapa*/
+$redes: (              
+        facebook: #677580,
+        whatsapp:  #32549d,
+        instagram: #ca2572
+); 
+/*Creando el bucle para usar los valores del mapa*/
+
+@each $red, $color in $redes {
+   .caja--#{$red} {
+       background-color: $color;
+   }
+}
+
+
+
+footer{
+    width: 100%;
+    padding-left: 600px;
+    padding-top: 20px;
+    img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+    }
+}
