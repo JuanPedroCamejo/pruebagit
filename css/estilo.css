@@ -1,8 +1,16 @@
-@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 body {
   background-color: azure;
   justify-content: center;
   justify-items: center;
+  overflow-x: hidden;
 }
 
 header {
@@ -27,7 +35,8 @@ header .logo {
 header h1 {
   color: green;
   font-family: "Palette Mosaic", cursive;
-  font-size: 90px;
+  font-size: 60px;
+  text-align: center;
 }
 header .header {
   padding: 1.2rem;

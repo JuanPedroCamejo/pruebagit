@@ -8,7 +8,7 @@ $estilos: (
 
 
 .footer{
-    background-color: map-get($estilos, color);
+    background-color: map-get($estilos, $color);
     padding: map-get($estilos , 1rem);
     font-size: map-get($estilos, tfuente);
     text-align: map-get($estilos, centro);
@@ -23,9 +23,9 @@ $redes: (
 /*Creando el bucle para usar los valores del mapa*/
 
 @each $red, $color in $redes {
-   .caja--#{$red} {
-       background-color: $color;
-   }
+    .caja--#{$red} {
+    background-color: $color;
+    }
 }
 
 
